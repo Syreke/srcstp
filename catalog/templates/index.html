@@ -1,0 +1,18 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+<h1>Satpayev University</h1>
+
+  <p>Welcome to <em>Satpayev University</em>, the best university in the world!</p>
+
+<h2>Quantity</h2>
+
+  <p>The University has the following people:</p>
+  <ul>
+    <li><strong>Players:</strong> {{ num_players }}</li>
+    <li><strong>Teams:</strong> {{ num_teams }}</li>
+    <li><strong>Visits:</strong> {{ num_visits }}</li>
+	
+  </ul>
+
+{% endblock %}
