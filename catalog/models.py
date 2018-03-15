@@ -13,6 +13,7 @@ class Player(models.Model):
     class Meta:
         ordering = ["last_name", "first_name"]
 
+
     def get_absolute_url(self):
         return reverse('player-detail', args=[str(self.id)])
 
@@ -26,12 +27,12 @@ class Team(models.Model):
     date_of_birth = models.DateField(null=True, blank=True)
 
     class Meta:
-        ordering = ["name"]
+        ordering = ["name","awards"]
 
     def get_absolute_url(self):
         return reverse('team-detail', args=[str(self.id)])
 
     def __str__(self):
-        return '{0},{1}'.format(self.name)
+        return '{0},{1}'.format(self.name,self.awards)
 
 
