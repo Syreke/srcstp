@@ -14,14 +14,14 @@
   <link rel="stylesheet" href="{% static 'css/styles.css' %}">
 </head>
 
-<body>
+<body style="background-color: azure">
 
   <div class="container-fluid">
 
-    <div class="row">
+    <div class="row ">
       <div class="col-sm-2">
       {% block sidebar %}
-      <ul class="sidebar-nav">
+      <ul class="sidebar-nav list-group">
           <li><a href="{% url 'index' %}">Home</a></li>
           <li><a href="{% url 'players' %}">All players</a></li>
           <li><a href="{% url 'teams' %}">All teams</a></li>
